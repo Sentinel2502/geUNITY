@@ -1,4 +1,4 @@
-using System.Collections;
+/*using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -39,4 +39,24 @@ public class rWalking : MonoBehaviour
     {
         rb.MovePosition(transform.position + (direction * speed * Time.deltaTime));
     }
-}
+}*/
+using UnityEngine;
+
+public class rWalking : MonoBehaviour
+{
+    public float moveSpeed = 100f;
+    // Use this for initialization
+    void Start()
+    {
+
+    }
+
+    // Update is called once per frame
+    void FixedUpdate()
+    {
+        //Moves Forward and back along z axis //Up/Down
+        transform.Translate(new Vector3(0, 1, 0) * Time.deltaTime * Input.GetAxis("Vertical") * moveSpeed);
+        //Moves Left and right along x Axis //Left/Right
+        transform.Translate(Vector3.right * Time.deltaTime * Input.GetAxis("Horizontal") * moveSpeed);
+    }
+} 
