@@ -38,14 +38,17 @@ public class rWalking : MonoBehaviour
 
         if (Math.Abs(vertical) < 0.7 && Math.Abs(horizontal) < 0.7)
             changeState(CHAR_STAND);
-        else if (vertical > 0)
+        if (vertical > 0)
             changeState(CHAR_BACK);
-        else if (vertical < 0)
+        if (vertical < 0)
             changeState(CHAR_FOR);
-        else if (horizontal > 0)
+        if (horizontal > 0)
             changeState(CHAR_RIGHT);
-        else if (horizontal < 0)
+        if (horizontal < 0)
             changeState(CHAR_LEFT);
+
+        if (Input.GetKey(KeyCode.UpArrow))
+            Application.LoadLevel ("library");
     }
 
     void changeState(int state){
