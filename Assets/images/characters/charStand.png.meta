@@ -1,7 +1,13 @@
 fileFormatVersion: 2
 guid: 9a6394793b569b6f5947f75a077fa907
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -915682584933840045
+    second: charStand_1
+  - first:
+      213: -915682584933840045
+    second: charStand_0
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -84,7 +90,28 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: charStand_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 72
+        height: 210
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 976648d6592d169779daa4830e536ac1
+      internalID: -915682584933840045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
